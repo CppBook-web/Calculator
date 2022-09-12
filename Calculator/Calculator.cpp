@@ -1,7 +1,6 @@
 ﻿#include <iostream>
 using namespace std;
-int main()
-{
+int main() {
     setlocale(LC_ALL, "rus");
 
     double x = 0.0;
@@ -13,18 +12,13 @@ int main()
     cout << "Введите выражение для вычисления. Формат: a + b, a - b, a * b, a / b."
         << "\nВвод:";
 
-    while (true)
-    {
+    while (true) {
         cin >> x >> oper >> y;
-        if (oper == '/' && y == 0)
-        {
+        if (oper == '/' && y == 0) {
             cout << "Деление на ноль запрещено" << endl;
             continue;
-        }
-        else
-        {
-            switch (oper)
-            {
+        } else {
+            switch (oper) {
             case '+':
                 result = x + y;
                 break;
@@ -43,6 +37,5 @@ int main()
         }
         cout << "Результат: " << result << endl;
     }
-
     return 0;
 }
